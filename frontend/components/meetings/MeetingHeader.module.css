@@ -1,0 +1,249 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+}
+
+.breadcrumbLink {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumbLink:hover {
+    color: var(--brand-primary);
+}
+
+.sep {
+    color: var(--text-light);
+}
+
+.breadcrumbCurrent {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.breadcrumbCurrent:hover {
+    border-color: var(--border-light);
+    background: var(--bg-hover);
+}
+
+.titleInput {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--brand-primary);
+    outline: none;
+    font-family: inherit;
+    min-width: 250px;
+}
+
+.editIcon {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.breadcrumbCurrent:hover .editIcon {
+    opacity: 1;
+}
+
+.actionsBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.participants {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.participantAvatarGroup {
+    position: relative;
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    background: var(--brand-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: 2px solid white;
+}
+
+.removeParticipantBtn {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #ea4335;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+    line-height: 1;
+}
+
+.participantAvatarGroup:hover .removeParticipantBtn {
+    opacity: 1;
+}
+
+.addParticipantWrapper {
+    position: relative;
+}
+
+.addParticipantBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px dashed var(--text-gray);
+    background: transparent;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.addParticipantBtn:hover {
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+    background: var(--bg-hover);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 100;
+}
+
+.dropdownInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 1px solid var(--border-light);
+    border-radius: 8px 8px 0 0;
+    outline: none;
+    font-family: inherit;
+}
+
+.dropdownList {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background: var(--bg-hover);
+}
+
+.dropdownItemAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--brand-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.dropdownItemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownItemName {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.dropdownItemEmail {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+.dropdownEmpty {
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background: var(--border-light);
+}
+
+.deleteBtn {
+    padding: 8px 12px;
+    border: 1px solid #ea4335;
+    color: #ea4335;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.deleteBtn:hover {
+    background: #fce8e6;
+}

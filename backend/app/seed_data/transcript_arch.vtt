@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:10.500
+Bob: Welcome to the backend architecture review everybody. Today we want to discuss our transition to a hexagonal design pattern. Charlie, any thoughts right off the bat?
+
+00:00:11.000 --> 00:00:20.100
+Charlie: I like the idea of decoupling our domain logic from the framework, but I'm worried about the boilerplate involved in setting up so many adapters.
+
+00:00:21.000 --> 00:00:26.500
+Alice: That's a valid concern. However, I think the testability improvements outweigh the upfront setup cost. Right now, mocking the database for tests is a nightmare.
+
+00:00:27.000 --> 00:00:35.000
+Bob: Exactly. If we push dependencies to the edges, our unit tests for the core logic can run in sub-milliseconds without firing up a Postgres container.
+
+00:00:35.500 --> 00:00:44.200
+Charlie: Okay, I see the value. To mitigate the boilerplate, we can write a CLI tool or script that scaffolds repositories and adapters automatically.
+
+00:00:45.000 --> 00:00:52.000
+Alice: Good idea, Charlie. Let's make sure we document the scaffolding process in the internal wiki before we merge the first port.
+
+00:00:53.000 --> 00:01:05.500
+Bob: Sounds like a plan. I will draft a quick proof-of-concept PR converting the Users module this weekend and we can review it on Monday.

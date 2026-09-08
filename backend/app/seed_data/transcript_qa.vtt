@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:10.500
+Alice: Alright, let's start today's Q&A session. We've got a lot of questions from the community about the new v2 API. Charlie, do you want to take the first one about rate limits?
+
+00:00:11.000 --> 00:00:20.100
+Charlie: Yeah, absolutely. So, the question was whether we'd be increasing the free tier rate limits. The answer is yes. We are bumping it up from 60 per minute to 100 per minute.
+
+00:00:21.000 --> 00:00:26.500
+Bob: That's awesome. I think a lot of developers were struggling with the 60/min limit when testing their integrations.
+
+00:00:27.000 --> 00:00:33.000
+Alice: Exactly. Will this impact our infrastructure costs significantly, Bob? Or are we well provisioned?
+
+00:00:33.500 --> 00:00:44.200
+Bob: It will increase our caching costs slightly, but with the new Redis cluster we deployed last week, we have plenty of headroom. I'm not worried about performance at all.
+
+00:00:45.000 --> 00:00:52.000
+Charlie: Great. Next question is about webhooks. Several users asked if we will support retry policies natively in v2.
+
+00:00:53.000 --> 00:01:05.500
+Alice: That's on the roadmap for Q4, but it won't be in the initial v2 launch. Let's make sure we document that clearly so we can set expectations. Charlie, can you add a note to the changelog?
+
+00:01:06.000 --> 00:01:10.000
+Charlie: Sure thing, I'll update the v2 documentation draft today.
+
+00:01:11.000 --> 00:01:15.500
+Alice: Perfect! Thanks both. That covers the major questions for this week.

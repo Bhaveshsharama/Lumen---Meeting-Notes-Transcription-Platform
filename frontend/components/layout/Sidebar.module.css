@@ -1,0 +1,166 @@
+.sidebar {
+    width: var(--sidebar-width);
+    min-height: 100vh;
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.logo {
+    padding: 20px 16px 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 8px;
+}
+
+.logoIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-md);
+    background: var(--brand-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.logoText {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.navScroll {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    gap: 8px;
+}
+
+.navScroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.navScroll::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.navGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.navDivider {
+    height: 1px;
+    background-color: var(--border);
+    margin: 4px 6px;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    text-decoration: none;
+    position: relative;
+}
+
+.navItem:hover {
+    background: var(--bg-app);
+    color: var(--text-primary);
+}
+
+.navItem.active {
+    color: var(--brand-primary);
+    background: #EDE9FE;
+    font-weight: 600;
+}
+
+.navIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    width: 18px;
+    height: 18px;
+}
+
+.navLabel {
+    flex: 1;
+}
+
+.navBadge {
+    font-size: 10px;
+    font-weight: 600;
+    color: #10b981;
+    background: #ecfdf5;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.navItem.highlighted {
+    background: #F4F0FF;
+    border-radius: 6px;
+    color: var(--text-primary);
+}
+
+.navItem.highlighted:hover {
+    background: #EDE9FE;
+}
+
+.sidebarFooter {
+    padding: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.userRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-full);
+    background: #E85D8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.userName {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.userEmail {
+    font-size: 11px;
+    color: var(--text-secondary);
+}

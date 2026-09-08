@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:10.500
+Alice: Hi everyone, thanks for joining the design system hand-off. I want to quickly run through the new color scales and typographic rules we agreed on last week.
+
+00:00:11.000 --> 00:00:20.100
+Charlie: Sure thing. Bob's out sick today but I can step in for frontend engineering. Did you finalize the specific hex values for the primary and secondary branding colors?
+
+00:00:21.000 --> 00:00:26.500
+Alice: Yes, we did. We are locking in #7A5AF8 as the primary purple and keeping the light backgrounds.
+
+00:00:27.000 --> 00:00:35.000
+Charlie: Nice, that works perfectly. By the way, are we still using rounded corners globally? 
+
+00:00:35.500 --> 00:00:44.200
+Alice: Correct, 8px border radius on everything. Also, make sure that buttons have a slight box-shadow on hover to add depth. All the CSS variables are in the Figma export.
+
+00:00:45.000 --> 00:00:52.000
+Charlie: Understood. I'll import the updated tokens and CSS custom variables tomorrow. 
