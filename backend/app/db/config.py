@@ -31,11 +31,7 @@ class Settings(BaseSettings):
 
     # CORS — comma-separated list in CORS_ORIGINS env var, e.g. "https://lumen.app,https://www.lumen.app"
     # Falls back to localhost:3000 for local development
-    CORS_ORIGINS: list[str] = [
-        o.strip()
-        for o in os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
-        if o.strip()
-    ]
+    CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "http://localhost:3000")
 
     model_config = {
         "env_file": str(BACKEND_DIR / ".env"),

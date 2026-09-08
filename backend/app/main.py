@@ -11,7 +11,7 @@ app = FastAPI(title="Lumen API", version="1.0.0")
 # CORS — origins come from CORS_ORIGINS env var (comma-separated), with localhost:3000 as dev fallback
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origins=[o.strip() for o in settings.CORS_ORIGINS.split(",") if o.strip()],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
